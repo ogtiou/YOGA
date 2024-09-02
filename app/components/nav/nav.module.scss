@@ -1,0 +1,47 @@
+$bc: #eee4da;
+$green: #acc89f;
+$text: #c59245;
+
+.wrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: $bc;
+    z-index: 98;
+
+    .overlay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        // padding: 5rem 0;
+
+        .ul {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 2rem;
+
+            .mask {
+                overflow: hidden;
+                transition: 0.2s ease;
+                will-change: transform;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+
+            a {
+                color: $text;
+                font-size: clamp(3rem, 6vw, 7rem);
+                text-decoration: none;
+                font-family: sans-serif;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,36 @@
+.wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #eee4da;
+  z-index: 98;
+}
+.wrapper .overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.wrapper .overlay .ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+}
+.wrapper .overlay .ul .mask {
+  overflow: hidden;
+  transition: 0.2s ease;
+  will-change: transform;
+}
+.wrapper .overlay .ul .mask:hover {
+  transform: scale(1.05);
+}
+.wrapper .overlay .ul a {
+  color: #c59245;
+  font-size: clamp(3rem, 6vw, 7rem);
+  text-decoration: none;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}/*# sourceMappingURL=nav.module.css.map */
